@@ -1,22 +1,22 @@
-**INTRODUCTION**
+# Hospital Management System
 
 It is a small project on Hospital Management System that will deal with the patients doctors and
 appointments and its prescription records
 The Project has basic three functions for all these classes
 
- Addtofile
+=> Addtofile
 
- Viewfromfile
+=> Viewfromfile
 
- Searchfromfile
+=> Searchfromfile
 
 The classes have other functions too for managing records.
 
-**UML**
+## UML
 
 ![class diagram project](https://github.com/user-attachments/assets/1f4a5739-b6e9-43ff-ab4e-18d4b2b668bf)
 
-**OUTPUTS**
+## OUTPUTS
 
 ![image](https://github.com/user-attachments/assets/20394365-5012-4953-9478-b2d96fa3375e)
 ![image](https://github.com/user-attachments/assets/756f65af-4e72-4662-8633-8088885d4101)
