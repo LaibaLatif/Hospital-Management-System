@@ -1,36 +1,118 @@
-# Hospital Management System
+# 🏥 Hospital Management System (PF Based)
 
-It is a small project on Hospital Management System that will deal with the patients doctors and
-appointments and its prescription records
-The Project has basic three functions for all these classes
+## 📌 Project Description
 
-=> Addtofile
+This project is a **Hospital Management System** developed using C++ and structured around three main entities:
 
-=> Viewfromfile
+- `Patient`
+- `Doctor`
+- `Appointments`
 
-=> Searchfromfile
+Each entity is defined in its **own header file** using C++ structures, and all related functions are implemented in their respective files.
 
-The classes have other functions too for managing records.
+---
 
-## UML
+## 🧩 Entities and Their Attributes
 
-![class diagram project](https://github.com/user-attachments/assets/1f4a5739-b6e9-43ff-ab4e-18d4b2b668bf)
+### 1. Patient
+- **Patient ID**
+- **Patient Name**
+- **Patient Age**
+- **Patient Email**
 
-## OUTPUTS
+### 2. Doctor
+- **Doctor ID**
+- **Patient Count**
+- **Doctor Age**
+- **Work Hours**
 
-![image](https://github.com/user-attachments/assets/20394365-5012-4953-9478-b2d96fa3375e)
-![image](https://github.com/user-attachments/assets/756f65af-4e72-4662-8633-8088885d4101)
-![image](https://github.com/user-attachments/assets/05288e5d-6c1f-4683-90d8-f61aee472e5e)
-![image](https://github.com/user-attachments/assets/6ce11783-53af-48fa-b33a-40d13b9638b2)
-![image](https://github.com/user-attachments/assets/b19daf4e-5f6a-4ec9-b425-545795b76c6d)
-![image](https://github.com/user-attachments/assets/6f56a782-37ce-45a9-a4d4-41369c067f57)
-![image](https://github.com/user-attachments/assets/6fa8407b-2d1c-42c8-b6d1-b1fcb6619f31)
+### 3. Appointments
+- **Doctor ID**
+- **Patient ID**
+- **Time**
+- **Fees**
 
+---
 
+## 📁 Header Files
 
+The following header files are used in the project to modularize the functionality:
 
+- `Patient.h`
+- `Doctor.h`
+- `Appointments.h`
 
+Each file contains:
+- The structure definition for the entity
+- Functions for Add, View, Search, Update, Delete (where applicable)
+- File I/O functions for storing and retrieving data
 
+---
 
+## 🧰 Entity Functionalities
 
+### 🔹 Patient
 
+- `Add()` – Add a new patient record
+- `View()` – View all saved patient records
+- `Search(value)` – Search and display a patient record based on a given value
+- `Update(value)` – Search and update a patient record
+- `Delete(value)` – Search and delete a patient record
+- `ReadFromFile()` – Read all patient records from file to a structure array
+- `WriteToFile()` – Write patient records from structure array to file
+
+---
+
+### 🔹 Doctor
+
+- `Add()` – Add a new doctor record
+- `View()` – View all saved doctor records
+- `Search(value)` – Search and display a doctor record based on a given value
+- `Update(value)` – Search and update a doctor record
+- `Delete(value)` – Search and delete a doctor record
+- `ReadFromFile()` – Read all doctor records from file to a structure array
+- `WriteToFile()` – Write doctor records from structure array to file
+
+---
+
+### 🔹 Appointments
+
+- `Add()` – Add a new appointment record
+- `View()` – View all saved appointment records
+- `Search(value)` – Search and display an appointment record based on a given value
+- `ReadFromFile()` – Read all appointment records from file to a structure array
+- `WriteToFile()` – Write appointment records from structure array to file
+
+---
+
+## 💡 Notes
+
+- All file operations ensure data persistence between sessions.
+- Structure arrays are used to handle multiple records efficiently.
+- Modular code design is followed using header files for each entity.
+
+---
+
+## ✅ Technologies Used
+
+- Language: **C++**
+- File Handling: **Text/Binary Files**
+- Code Modularity: **Header Files & Functions**
+
+---
+
+## 📂 How to Run
+
+1. Ensure all header files (`Patient.h`, `Doctor.h`, `Appointments.h`) are in the same directory as your main `.cpp` file.
+2. Compile the main program using a C++ compiler.
+3. Run the executable and interact with the system using console input.
+
+---
+
+## 📤 Outputs
+
+![image](https://github.com/user-attachments/assets/982b6c49-d62a-480c-ba2d-de74cc26f937)
+![image](https://github.com/user-attachments/assets/0c83497e-be01-4b1f-bf23-513213c3d4a3)
+![image](https://github.com/user-attachments/assets/f73b7c50-ad9f-41d8-bc1d-78ce7e1ef15e)
+![image](https://github.com/user-attachments/assets/dc34e015-4734-445b-bdea-91f90eae4453)
+![image](https://github.com/user-attachments/assets/504ee8e2-0022-445a-83df-569b04cdcddb)
